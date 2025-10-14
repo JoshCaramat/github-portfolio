@@ -14,14 +14,16 @@ body {
 /* header */
 header {
     position: fixed;
+    display: block;
     width: 100%;
     padding: 1rem 0;
     z-index: 100;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.10); 
+    background: #fff;
+    /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.10);  */
 }
 .nav {
     max-width: 968px;
-    height: 3.2rem;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +50,7 @@ a.nav-link:hover {
   
 #profile {
   gap: 5rem;
-  height: 80vh;
+  height: 100vh;
 }
 
 .section__pic-container {
@@ -64,7 +66,7 @@ a.nav-link:hover {
 }
 
 .section__text p {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .section__text__p1 {
@@ -109,10 +111,37 @@ a.nav-link:hover {
 }
   
 
-section#skills {
+section#skills,#projects {
     position: relative;
+    height: 100vh;
+    scroll-margin-top: 10vh;
 }
 
 i.tech-stack-icon {
     font-size: 40px;
 }
+
+
+.nav-link.active {
+    color: #0d6efd !important;
+    border-bottom: 2px solid #0d6efd;
+  }
+  
+
+  .caption-below {
+    text-align: center;
+  }
+
+  .caption-below h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .caption-below p {
+    color: #555;
+    font-size: 1rem;
+  }
+  .filter-dark {
+    filter: invert(1) brightness(0); /* makes arrow dark */
+  }
