@@ -1,55 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 body {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* header */
 header {
-    position: fixed;
-    display: block;
-    width: 100%;
-    padding: 1rem 0;
-    z-index: 100;
-    background: #fff;
-    /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.10);  */
+  position: fixed;
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 100;
+  background: #fff;
+  /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.10);  */
 }
+
 .nav {
-    max-width: 968px;
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 968px;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 ul {
-    list-style: none;
+  list-style: none;
 }
-.logo, a.nav-link {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
+
+.logo,
+a.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
+
 a.nav-link:hover {
-    color: #5a5a5a;
+  color: #5a5a5a;
 }
+
 .logo {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 /* main */
 
-  
-  /* PROFILE SECTION */
-  
+
+/* PROFILE SECTION */
+
 #profile {
-  gap: 5rem;
+  /* gap: 5rem; */
   height: 100vh;
 }
 
@@ -91,17 +99,17 @@ a.nav-link:hover {
 }
 
 .icon {
-    cursor: pointer;
-    height: 5rem;
-    width: 5rem;
+  cursor: pointer;
+  height: 5rem;
+  width: 5rem;
 }
 
 .btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
@@ -109,39 +117,42 @@ a.nav-link:hover {
   width: 8rem;
   border-radius: 2rem;
 }
-  
 
-section#skills,#projects {
-    position: relative;
-    height: 100vh;
-    scroll-margin-top: 10vh;
+
+section#skills {
+  position: relative;
+  height: 100vh;
+  scroll-margin-top: 10vh;
 }
 
 i.tech-stack-icon {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 
 .nav-link.active {
-    color: #0d6efd !important;
-    border-bottom: 2px solid #0d6efd;
-  }
-  
+  color: #0d6efd !important;
+  border-bottom: 2px solid #0d6efd;
+}
 
-  .caption-below {
-    text-align: center;
-  }
 
-  .caption-below h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-  }
+.caption-below {
+  text-align: center;
+}
 
-  .caption-below p {
-    color: #555;
-    font-size: 1rem;
-  }
-  .filter-dark {
-    filter: invert(1) brightness(0); /* makes arrow dark */
-  }
+.caption-below h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.caption-below p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.filter-dark {
+  filter: invert(1) brightness(0);
+  /* makes arrow dark */
+}
+
