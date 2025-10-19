@@ -1,203 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />          
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> -->
+   <title>Josh Ivan</title>
+   <style>
+      @media (max-width: 768px) {
+      .carousel-inner .carousel-item > div {
+         display: none;
+      }
+      .carousel-inner .carousel-item > div:first-child {
+         display: block;
+      }
+      }
 
-    <title>Josh Ivan</title>
+      .carousel-inner .carousel-item.active,
+      .carousel-inner .carousel-item-next,
+      .carousel-inner .carousel-item-prev {
+      display: flex;
+      }
+
+      /* Show 3 cards per slide on desktop */
+      @media (min-width: 768px) {
+      .carousel-inner .carousel-item-end.active,
+      .carousel-inner .carousel-item-next {
+         transform: translateX(33.333%);
+      }
+
+      .carousel-inner .carousel-item-start.active, 
+      .carousel-inner .carousel-item-prev {
+         transform: translateX(-33.333%);
+      }
+      }
+
+      .carousel-inner .carousel-item-end,
+      .carousel-inner .carousel-item-start { 
+      transform: translateX(0);
+      }
+   </style>
 </head>
+
 <body>
-<!-- header  -->
-    <header class="shadow">
-        <nav class="nav container">
-            <div class="logo">joshivancaramat</div>
-            <div class="menu">
-                <ul class="nav justify-content-end" id="links">                  
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>                
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacts">Contact</a>
-                    </li>                            
-                </ul>
-            </div>
-        </nav>
-    </header>
-<!-- body/main -->
-    <main>
-        <section class="d-flex justify-content-center" id="profile">
-            <div class="section__pic-container">
-                <img class="rounded-circle shadow" src="assets/profile-img.png" alt="profile picture" />
-            </div>
-            <div class="section__text">
-                <p class="section__text__p1">Hello, I'm</p>
-                <h1 class="title">Josh Ivan Caramat</h1>
-                <p class="section__text__p2">Frontend Developer | UI/UX</p>
-            
-                <div class="btn-container">
-                    <button class="btn btn-outline-dark" onclick="window.open('./assets/resume-example.pdf')">
-                        Download CV
-                    </button>
-                    <button class="btn btn-dark">
-                        Contact Info
-                    </button>
-                </div>
+   <!-- header  -->
+   <header class="shadow">
+      <nav class="nav container-fluid">
+         <div class="logo">joshivancaramat</div>
+         <div class="menu">
+            <ul class="nav justify-content-end" id="links">
+               <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contacts">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+   <!-- body/main -->
+   <main>
+      <section class="d-flex justify-content-center" id="profile">
+         <div class="section__pic-container">
+            <img class="rounded-circle shadow" src="assets/profile-img.png" alt="profile picture" />
+         </div>
+         <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Josh Ivan Caramat</h1>
+            <p class="section__text__p2">Frontend Developer | UI/UX</p>
 
-                <div id="socials-container">
-                    <a href="https://www.linkedin.com/in/josh-ivan-caramat-208453298/"><i class="fs-2 bi bi-linkedin text-dark"></i></a>
-                    <a href="https://github.com/JoshCaramat"><i class="fs-2 bi bi-github  text-dark"></i></a>
-                </div>
-            </div>                
-        </section>
-        
-        <section id="skills" class="container">
-            <h1 class="text-center mb-5 fw-bold">Skills</h1>
-            
-            <!-- Tech Stack -->
-            <div class="mb-5">
-                <h3 class="text-center mb-4">Tech Stack</h3>
-                <div class="row text-center">
-                    <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-html5-plain colored fs-1"></i>
-                    <p class="mt-2 fw-semibold">HTML</p>
-                </div>
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-css3-plain colored fs-1"></i>
-                    <p class="mt-2 fw-semibold">CSS</p>
-                </div>
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-javascript-plain colored fs-1"></i>
-                    <p class="mt-2 fw-semibold">JavaScript</p>
-                </div>
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-bootstrap-plain colored fs-1"></i>
-                    <p class="mt-2 fw-semibold">Bootstrap</p>
-                </div>
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-php-plain colored fs-1"></i>
-                    <p class="mt-2 fw-semibold">PHP</p>
-                </div>
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-mysql-plain-wordmark fs-1"></i>
-                    <p class="mt-2 fw-semibold">MySQL</p>
-                </div>
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-java-plain colored fs-1"></i>
-                    <p class="mt-2 fw-semibold">Java</p>
-                </div>
-              </div>
+            <div class="btn-container">
+               <button class="btn btn-outline-dark" onclick="window.open('./assets/resume-example.pdf')">
+                  Download CV
+               </button>
+               <button class="btn btn-dark">
+                  Contact Info
+               </button>
             </div>
-          
-            <!-- Software Used -->
-            <div>
-              <h3 class="text-center mb-4">Software Used</h3>
-              <div class="row text-center">
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-figma-plain fs-1"></i>
-                    <p class="mt-2 fw-semibold">Figma</p>
-                </div>
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-vscode-plain colored fs-1"></i>
-                    <p class="mt-2 fw-semibold">VS Code</p>
-                </div>
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-godot-plain colored fs-1"></i>
-                    <p class="mt-2 fw-semibold">Godot</p>
-                </div>
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-canva-original colored fs-1"></i>
-                    <p class="mt-2 fw-semibold">Canva</p>
-                </div>
-                <div class="col-6 col-md-4 mb-4">
-                    <i class="devicon-photoshop-plain colored fs-1"></i>
-                    <p class="mt-2 fw-semibold">Photoshop</p>
-                </div>
-              </div>
+
+            <div id="socials-container">
+               <a href="https://www.linkedin.com/in/josh-ivan-caramat-208453298/"><i
+                     class="fs-2 bi bi-linkedin text-dark"></i></a>
+               <a href="https://github.com/JoshCaramat"><i class="fs-2 bi bi-github  text-dark"></i></a>
             </div>
-          </section>
-          
-          <section id="projects" class="text-center container">
+         </div>
+      </section>
+
+      <section id="skills" class="container">
+         <h1 class="text-center mb-5 fw-bold">Skills</h1>
+
+         <!-- Tech Stack -->
+         <div class="mb-5">
+            <h3 class="text-center mb-4">Tech Stack</h3>
+            <div class="row text-center">
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-html5-plain colored fs-1"></i>
+                  <p class="mt-2 fw-semibold">HTML</p>
+               </div>
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-css3-plain colored fs-1"></i>
+                  <p class="mt-2 fw-semibold">CSS</p>
+               </div>
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-javascript-plain colored fs-1"></i>
+                  <p class="mt-2 fw-semibold">JavaScript</p>
+               </div>
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-bootstrap-plain colored fs-1"></i>
+                  <p class="mt-2 fw-semibold">Bootstrap</p>
+               </div>
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-php-plain colored fs-1"></i>
+                  <p class="mt-2 fw-semibold">PHP</p>
+               </div>
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-mysql-plain-wordmark fs-1"></i>
+                  <p class="mt-2 fw-semibold">MySQL</p>
+               </div>
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-java-plain colored fs-1"></i>
+                  <p class="mt-2 fw-semibold">Java</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- Software Used -->
+         <div>
+            <h3 class="text-center mb-4">Software Used</h3>
+            <div class="row text-center">
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-figma-plain fs-1"></i>
+                  <p class="mt-2 fw-semibold">Figma</p>
+               </div>
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-vscode-plain colored fs-1"></i>
+                  <p class="mt-2 fw-semibold">VS Code</p>
+               </div>
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-godot-plain colored fs-1"></i>
+                  <p class="mt-2 fw-semibold">Godot</p>
+               </div>
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-canva-original colored fs-1"></i>
+                  <p class="mt-2 fw-semibold">Canva</p>
+               </div>
+               <div class="col-6 col-md-4 mb-4">
+                  <i class="devicon-photoshop-plain colored fs-1"></i>
+                  <p class="mt-2 fw-semibold">Photoshop</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- <section id="projects" class="text-center container">
             <h1 class="text-center mb-5 fw-bold">Projects</h1>
-            <div class="d-flex justify-content-center align-items-center w-100">
-                
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon filter-dark" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-
-              <div id="carouselExampleCaptions" class="carousel slide w-75">
-                <div class="carousel-inner">
-          
-                  <div class="carousel-item active">
-                    <img src="assets/Screenshot 2024-06-25 211208.png" class="d-block w-100" alt="Area 52">
-                    <div class="caption-below mt-3">
-                      <h2>Area 52</h2>
-                      <p>Some representative placeholder content for the first slide.</p>
-                    </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="assets/gradingsystem/gradingsystem-1.png" class="d-block w-100 card-img-top" alt="gradingsystem-1">
+                  <div class="card-body">
+                    <h5 class="card-title">Grading System</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-          
-                  <div class="carousel-item">
-                    <img src="assets/Screenshot 2024-06-25 211208.png" class="d-block w-100" alt="Second slide">
-                    <div class="caption-below mt-3">
-                      <h2>Second slide label</h2>
-                      <p>Some representative placeholder content for the second slide.</p>
-                    </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="assets/kabstore/kabstore-1.png" class="d-block w-100 card-img-top" alt="kabstore-1">
+                  <div class="card-body">
+                    <h5 class="card-title">Kabstore</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-          
-                  <div class="carousel-item">
-                    <img src="assets/Screenshot 2024-06-25 211208.png" class="d-block w-100" alt="Third slide">
-                    <div class="caption-below mt-3">
-                      <h2>Third slide label</h2>
-                      <p>Some representative placeholder content for the third slide.</p>
-                    </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="assets/elemix/elemix-1.png" class="d-block w-100 card-img-top" alt="elemix-1">
+                  <div class="card-body">
+                    <h5 class="card-title">Elemix</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
-          
-                </div>          
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="assets/binaryrush/binaryrush-1.png" class="d-block w-100" alt="binaryrush-1">
+                  <div class="card-body">
+                    <h5 class="card-title">Binary Rush</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="assets/Area-52/Area-52-1.png" class="d-block w-100" alt="Area-52">
+                  <div class="card-body">
+                    <h5 class="card-title">Area 52</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon filter-dark" aria-hidden="true"></span>
+          </section> -->
+
+      <section id="projects" class="text-center container px-5">
+         <div class="text-center mb-5">
+            <h2 class="mb-4">Projects</h2>
+        
+            <div id="recipeCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+              <div class="carousel-inner w-100">
+                <div class="carousel-item active">
+                  <div class="col-md-4 pe-3">
+                    <div class="card">
+                        <img src="assets/gradingsystem/gradingsystem-1.png" class="d-block w-100 card-img-top" alt="gradingsystem-1">
+                        <div class="card-body">
+                          <h5 class="card-title">Grading System</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4 pe-3">
+                        <div class="card">
+                            <img src="assets/kabstore/kabstore-1.png" class="d-block w-100 card-img-top" alt="kabstore-1">
+                            <div class="card-body">
+                              <h5 class="card-title">Kabstore</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>    
+                </div>
+        
+                <div class="carousel-item">
+                  <div class="col-md-4 pe-3">
+                    <div class="card">
+                        <img src="assets/elemix/elemix-1.png" class="d-block w-100 card-img-top" alt="elemix-1">
+                        <div class="card-body">
+                          <h5 class="card-title">Elemix</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        
+                <div class="carousel-item">
+                  <div class="col-md-4 pe-3">
+                    <div class="card">
+                        <img src="assets/binaryrush/binaryrush-1.png" class="d-block w-100 card-img-top" alt="binaryrush-1">
+                        <div class="card-body">
+                          <h5 class="card-title">Binary Rush</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        
+                <div class="carousel-item">
+                  <div class="col-md-4 pe-3">
+                    <div class="card">
+                        <img src="assets/Area-52/Area-52-1.png" class="d-block w-100 card-img-top" alt="Area-52">
+                        <div class="card-body">
+                          <h5 class="card-title">Area 52</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+                      
+              <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-                </button>
+              </button>
+            </div>    
+          </div>
+      </section>          
+   </main>
 
-            </div>
-          </section>
-    </main>
-    
-    <script>
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll(".nav-link");
-      
-        window.addEventListener("scroll", () => {
-          let current = "";
-      
-          sections.forEach(section => {
-            const sectionTop = section.offsetTop - 120; // adjust offset for header height
-            if (pageYOffset >= sectionTop) {
-              current = section.getAttribute("id");
-            }
-          });
-      
-          navLinks.forEach(link => {
-            link.classList.remove("active");
-            if (link.getAttribute("href") === "#" + current) {
-              link.classList.add("active");
-            }
-          });
-        });
-      </script>
-      
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Pure JavaScript logic for cloning cards -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.querySelector('#recipeCarousel');
+      const carouselItems = carousel.querySelectorAll('.carousel-item');
+      const minPerSlide = 3; // how many cards per slide
+
+      carouselItems.forEach((el) => {
+        let next = el.nextElementSibling;
+        for (let i = 1; i < minPerSlide; i++) {
+          if (!next) next = carouselItems[0]; // loop to start
+          const cloneChild = next.firstElementChild.cloneNode(true);
+          el.appendChild(cloneChild);
+          next = next.nextElementSibling;
+        }
+      });
+    });
+  </script>  
 </body>
+
 </html>
