@@ -62,10 +62,12 @@ a.nav-link:hover {
 }
 
 .section__pic-container {
-  display: flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   height: 400px;
   width: 400px;
-  margin: auto 0;
+  /* margin: auto 0; */
 }
 
 .section__text {
@@ -156,3 +158,21 @@ i.tech-stack-icon {
   /* makes arrow dark */
 }
 
+.content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.php {
+  background-color: #474A8A;
+}
+.js {
+  background-color: #f7df1e;
+}
+.bootstrap {
+  background-color: #6f42c1
+}
+.gd {
+  background-color:  #478cbf;
+}
