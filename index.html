@@ -9,7 +9,6 @@
    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> -->
    <title>Josh Ivan</title>
    <style>
       @media (max-width: 768px) {
@@ -72,28 +71,30 @@
    </header>
    <!-- body/main -->
    <main>
-      <section class="d-flex justify-content-center" id="profile">
-         <div class="section__pic-container">
-            <img class="rounded-circle shadow" src="assets/profile-img.png" alt="profile picture" />
-         </div>
-         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Josh Ivan Caramat</h1>
-            <p class="section__text__p2">Frontend Developer | UI/UX</p>
-
-            <div class="btn-container">
-               <button class="btn btn-outline-dark" onclick="window.open('./assets/resume-example.pdf')">
-                  Download CV
-               </button>
-               <button class="btn btn-dark">
-                  Contact Info
-               </button>
+      <section class="container d-flex justify-content-center pt-5" id="profile">
+         <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-6 d-flex section__pic-container">
+               <img class="rounded-circle shadow" src="assets/profile-img.png" alt="profile picture" />
             </div>
-
-            <div id="socials-container">
-               <a href="https://www.linkedin.com/in/josh-ivan-caramat-208453298/"><i
+            <div class="col-md-6 section__text">
+               <p class="section__text__p1">Hello, I'm</p>
+               <h1 class="title">Josh Ivan Caramat</h1>
+               <p class="section__text__p2">Frontend Developer | UI/UX</p>
+   
+               <div class="btn-container">
+                  <button class="btn btn-outline-dark" onclick="window.open('./assets/resume-example.pdf')">
+                     Download CV
+                  </button>
+                  <button class="btn btn-dark">
+                     Contact Info
+                  </button>
+               </div>
+   
+               <div id="socials-container">
+                  <a href="https://www.linkedin.com/in/josh-ivan-caramat-208453298/"><i
                      class="fs-2 bi bi-linkedin text-dark"></i></a>
-               <a href="https://github.com/JoshCaramat"><i class="fs-2 bi bi-github  text-dark"></i></a>
+                  <a href="https://github.com/JoshCaramat"><i class="fs-2 bi bi-github  text-dark"></i></a>
+               </div>
             </div>
          </div>
       </section>
@@ -164,65 +165,9 @@
          </div>
       </section>
 
-      <!-- <section id="projects" class="text-center container">
-            <h1 class="text-center mb-5 fw-bold">Projects</h1>
-            <div class="row d-flex justify-content-center">
-              <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="assets/gradingsystem/gradingsystem-1.png" class="d-block w-100 card-img-top" alt="gradingsystem-1">
-                  <div class="card-body">
-                    <h5 class="card-title">Grading System</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="assets/kabstore/kabstore-1.png" class="d-block w-100 card-img-top" alt="kabstore-1">
-                  <div class="card-body">
-                    <h5 class="card-title">Kabstore</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="assets/elemix/elemix-1.png" class="d-block w-100 card-img-top" alt="elemix-1">
-                  <div class="card-body">
-                    <h5 class="card-title">Elemix</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="assets/binaryrush/binaryrush-1.png" class="d-block w-100" alt="binaryrush-1">
-                  <div class="card-body">
-                    <h5 class="card-title">Binary Rush</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="assets/Area-52/Area-52-1.png" class="d-block w-100" alt="Area-52">
-                  <div class="card-body">
-                    <h5 class="card-title">Area 52</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> -->
-
-      <section id="projects" class="text-center container px-5">
-         <div class="text-center mb-5">
-            <h2 class="mb-4">Projects</h2>
+      <section id="projects" class="container px-5">
+         <div class="mb-5">
+            <h2 class="text-center fw-bold mb-4">Projects</h2>
         
             <div id="recipeCarousel" class="carousel slide w-100" data-bs-ride="carousel">
               <div class="carousel-inner w-100">
@@ -231,9 +176,12 @@
                     <div class="card">
                         <img src="assets/gradingsystem/gradingsystem-1.png" class="d-block w-100 card-img-top" alt="gradingsystem-1">
                         <div class="card-body">
-                          <h5 class="card-title">Grading System</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Perston Academy Grading System</h5>
+                          <p class="card-text content">A web app that aims to provide grading portal that allows teachers/admin to modify grading sheets and calculate grades with flexible formulas and criteria. Student’s would be able to access their grades through their respective accounts given by the administrator.</p>                          
+                          
+                           <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#perston-Modal">
+                              See more
+                           </button>
                         </div>
                       </div>
                   </div>
@@ -244,8 +192,10 @@
                             <img src="assets/kabstore/kabstore-1.png" class="d-block w-100 card-img-top" alt="kabstore-1">
                             <div class="card-body">
                               <h5 class="card-title">Kabstore</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <p class="card-text content"> Kabstore is an e-commerce web application that aims to provide process of assistance in selling merchandise of Cavite State University.</p>
+                              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#kabstore-Modal">
+                                 See more
+                              </button>
                             </div>
                           </div>
                     </div>    
@@ -257,8 +207,10 @@
                         <img src="assets/elemix/elemix-1.png" class="d-block w-100 card-img-top" alt="elemix-1">
                         <div class="card-body">
                           <h5 class="card-title">Elemix</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <p class="card-text content">EleMix ia a web application that allows the user to simulate different chemical compounds and shows an animation of mixing those chemical compounds.</p>
+                           <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#elemix-Modal">
+                              See more
+                           </button>
                         </div>
                       </div>
                   </div>
@@ -270,8 +222,10 @@
                         <img src="assets/binaryrush/binaryrush-1.png" class="d-block w-100 card-img-top" alt="binaryrush-1">
                         <div class="card-body">
                           <h5 class="card-title">Binary Rush</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <p class="card-text content">Binary Rush is a competitive online decimal to binary convertion game that aims to elevate students efficiency in converting Decimal to Binary.</p>
+                          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#binaryrush-Modal">
+                           See more
+                           </button>
                         </div>
                       </div>
                   </div>
@@ -283,8 +237,10 @@
                         <img src="assets/Area-52/Area-52-1.png" class="d-block w-100 card-img-top" alt="Area-52">
                         <div class="card-body">
                           <h5 class="card-title">Area 52</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <p class="card-text content"> Area 52 is a tower-defense strategic game where battlefield occurs in Area 51. A player will have the role of commander-general who is in-charge of placing defenders against the attack of mutated aliens. The game requires strategy-making and attention, highlighting the challenge of the game.</p>
+                          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#area52-Modal">
+                           See more
+                           </button>
                         </div>
                       </div>
                   </div>
@@ -301,28 +257,266 @@
               </button>
             </div>    
           </div>
+          
+          <div class="modal fade" id="perston-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Perston Academy Grading System</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="carouselExampleIndicators" class="carousel slide">
+                     <!-- <div class="carousel-indicators">
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                     </div> -->
+                     <div class="carousel-inner">
+                       <div class="carousel-item active"><img src="assets/gradingsystem/gradingsystem-1.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-2.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-3.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-4.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-5.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-6.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-7.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-8.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-9.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-10.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-11.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-12.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-13.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/gradingsystem/gradingsystem-14.png" class="d-block w-100" alt="..."></div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                     </button>
+                   </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-start">
+                  <p>A web app that aims to provide grading portal that allows teachers/admin to modify grading sheets and calculate grades with flexible formulas and criteria. Student’s would be able to access their grades through their respective accounts given by the administrator.</p>
+                  <span class="badge badge-pill php">PHP</span>                                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="kabstore-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Perston Academy Grading System</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="carouselKabstoreIndicators" class="carousel slide">
+                     <!-- <div class="carousel-indicators">
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                     </div> -->
+                     <div class="carousel-inner">
+                       <div class="carousel-item active"><img src="assets/kabstore/kabstore-1.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-2.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-3.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-4.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-5.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-6.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-7.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-8.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-9.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-10.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-11.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-12.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/kabstore/kabstore-13.png" class="d-block w-100" alt="..."></div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselKabstoreIndicators" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselKabstoreIndicators" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                     </button>
+                   </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-start">
+                  <p>A web app that aims to provide grading portal that allows teachers/admin to modify grading sheets and calculate grades with flexible formulas and criteria. Student’s would be able to access their grades through their respective accounts given by the administrator.</p>
+                  <span class="badge badge-pill php">PHP</span>                  
+                  <span class="badge badge-pill js">JavaScript</span>                  
+                  <span class="badge badge-pill bootstrap">Bootstrap</span>                     
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="elemix-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Elemix</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="carouselElemixIndicators" class="carousel slide">
+                     <!-- <div class="carousel-indicators">
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                     </div> -->
+                     <div class="carousel-inner">
+                       <div class="carousel-item active"><img src="assets/elemix/elemix-1.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/elemix/elemix-2.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/elemix/elemix-3.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/elemix/elemix-4.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/elemix/elemix-5.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/elemix/elemix-6.png" class="d-block w-100" alt="..."></div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselElemixIndicators" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselElemixIndicators" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                     </button>
+                   </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-start">
+                  <p>EleMix ia a web application that allows the user to simulate different chemical compounds and shows an animation of mixing those chemical compounds.</p>
+                  <span class="badge badge-pill php">PHP</span>                  
+                  <span class="badge badge-pill js">JavaScript</span>                  
+                  <span class="badge badge-pill bootstrap">Bootstrap</span>                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="binaryrush-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Binary Rush</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="carouselBinaryRushIndicators" class="carousel slide">
+                     <!-- <div class="carousel-indicators">
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                     </div> -->
+                     <div class="carousel-inner">
+                       <div class="carousel-item active"><img src="assets/binaryrush/binaryrush-1.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-2.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-3.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-4.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-5.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-6.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-7.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-8.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-9.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-10.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-11.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-12.png" class="d-block w-100" alt="..."></div>
+                       <div class="carousel-item"><img src="assets/binaryrush/binaryrush-13.png" class="d-block w-100" alt="..."></div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselBinaryRushIndicators" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselBinaryRushIndicators" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                     </button>
+                   </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-start">
+                  <p>Binary Rush is a competitive online decimal to binary convertion game that aims to elevate students efficiency in converting Decimal to Binary.</p>
+                  <span class="badge badge-pill php">PHP</span>                  
+                  <span class="badge badge-pill js">JavaScript</span>                  
+                  <span class="badge badge-pill bootstrap">Bootstrap</span>                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="area52-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Binary Rush</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div id="carouselArea52Indicators" class="carousel slide">
+                     <!-- <div class="carousel-indicators">
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                     </div> -->
+                     <div class="carousel-inner" id="carouselArea52Inner">
+                        <script>
+                           const totalImages = 10;
+                           const carouselInner = document.getElementById("carouselArea52Inner");
+                         
+                           for (let i = 1; i <= totalImages; i++) {
+                             const div = document.createElement("div");
+                             div.className = `carousel-item${i === 1 ? ' active' : ''}`;
+                             div.innerHTML = `<img src="assets/Area-52/Area-52-${i}.png" class="d-block w-100" alt="Area 52 Image ${i}">`;
+                             carouselInner.appendChild(div);
+                           }
+                         </script>                       
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselArea52Indicators" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselArea52Indicators" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                     </button>
+                   </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-start">
+                  <p>Binary Rush is a competitive online decimal to binary convertion game that aims to elevate students efficiency in converting Decimal to Binary.</p>
+                  <span class="badge badge-pill gd">GDscript</span>                                
+                  <span class="badge badge-pill bg-primary">Photoshop</span>                                
+                </div>
+              </div>
+            </div>
+          </div>
       </section>          
    </main>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Pure JavaScript logic for cloning cards -->
+  
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const carousel = document.querySelector('#recipeCarousel');
       const carouselItems = carousel.querySelectorAll('.carousel-item');
-      const minPerSlide = 3; // how many cards per slide
+      const minPerSlide = 3; //cards per slide
 
       carouselItems.forEach((el) => {
         let next = el.nextElementSibling;
         for (let i = 1; i < minPerSlide; i++) {
-          if (!next) next = carouselItems[0]; // loop to start
+          if (!next) next = carouselItems[0]; 
           const cloneChild = next.firstElementChild.cloneNode(true);
           el.appendChild(cloneChild);
           next = next.nextElementSibling;
         }
       });
     });
+    const myModal = document.getElementById('myModal')
+   const myInput = document.getElementById('myInput')
+
+   myModal.addEventListener('shown.bs.modal', () => {
+   myInput.focus()
+   })
   </script>  
 </body>
 
